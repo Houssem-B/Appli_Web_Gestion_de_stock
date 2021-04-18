@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./app.css">
+    <title>Mini-projet: Le café de la place</title>
+</head>
+
+<body id="b">
+    <div class="uti">
+        <header class="header">
+            <h1>CAFE DE LA PLACE</h1>
+            <h2>GESTION DE STOCK</h2>
+
+
+        </header>
+
+        <div>
+            <h2>Utilisateur</h2>
+        </div>
+
+        <div class="mp">
+            <label for="username">Nom d'utilisateur: </label>
+            <input type="text" id="username" name="username">
+            <label for="pass">Mot de passe: </label>
+            <input type="password" id="pass" name="password" minlength="8" required>
+            <input type="submit" value="Se connecter">
+
+        </div>
+    </div>
+    <br>
+    <div id="np">
+        <h2>Selectionner un produit</h2>
+        <br>
+        <div class="ch">
+            <div id="Ch1"> <input type="checkbox" id="check1" name="Alc"><label for="Alc">Boisson alcoolisée</label>
+            </div>
+            <br>
+            <div id="Ch2"><input type="checkbox" id="check2" name="Nalc"><label for="Alc">Boisson non
+                    alcoolisée</label></div>
+            <br>
+            <div id="Ch3"><input type="checkbox" id="check3" name="Autre"><label for="Autre">Autre</label></div>
+            <br>
+
+        </div>
+    </div>
+    <br>
+
+    <table id="Tab">
+        <thead>
+            <tr>
+                <th class="Nom">
+                    <label>Nom du produit </label><input type="text" id="nom">
+                </th>
+                <th>
+                    <label>Degré d'alcool </label><input type="number" id="da">
+                </th>
+                <th class="Qp">
+                    <label>Quantité de produits </label>
+                    <input type="number" id="quantite" id="tentacles" name="tentacles" min="10" max="100">
+                </th>
+                <th class="Aht">
+                    <label>Prix d'achat HT </label><input type="number" id="aht">
+                </th>
+                <th class="Vht">
+                    <label>Prix de vente HT </label><input type="number" id="vht">
+                </th>
+                <th class="Mht">
+                    <label>Marge HT </label><input type="number" id="mht">
+                </th>
+                <th class="Vttc">
+                    <label>Prix de vente TTC </label><input type="number" id="vttc">
+                </th>
+                <div id="btn">
+                    <th>
+                        <input id="btn1" type="button" value="Ajouter" />
+                    </th>
+                </div>
+
+
+            </tr>
+        </thead>
+
+
+        <tbody id="container">
+        </tbody>
+    </table>
+
+
+
+
+    <script type="text/javascript" src="./Boisson.js"></script>
+    <script type="text/javascript" src="./BoissonAlc.js"></script>
+    <script type="text/javascript" src="./BoissonNonAlc.js"></script>
+    <script type="text/javascript" src="./Autre.js"></script>
+    <script type="text/javascript" src="./function.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
+
+</body>
+
+</html>
